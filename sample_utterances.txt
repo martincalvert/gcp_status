@@ -1,0 +1,6 @@
+AMAZON.HelpIntent help
+AMAZON.StopIntent stop
+AMAZON.CancelIntent cancel
+CurrentStatusIntent what is the current status
+CurrentStatusIntent is it currently up
+CurrentStatusIntent are there any outages
