@@ -11,7 +11,7 @@ const handlers = {
       });
     },
     'AMAZON.HelpIntent': function () {
-        this.emit(':ask', "Try are there any cards ready for review");
+        this.emit(':ask', "Try are there any outages");
     },
     'AMAZON.CancelIntent': function () {
         this.emit(':tell', 'Cancelled');
@@ -23,7 +23,7 @@ const handlers = {
 
 var https = require('https');
 
-function fetchstatus(callback){
+function fetchStatus(callback){
   var options = {
     host: 'status.cloud.google.com',
     path: '/incidents.json',
