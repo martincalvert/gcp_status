@@ -43,7 +43,7 @@ function fetchStatus(callback){
         var json = JSON.parse(retData);
         var first = json[0];
         if (first.end == (null || undefined)){
-          ret['answer'] = 'Yes ' + json.service_name + ' is currently having an event'
+          ret['answer'] = 'Yes ' + first.service_name + ' is currently having an event'
         } else {
           ret['answer'] = 'Nope all services are operational'
         }
